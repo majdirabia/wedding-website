@@ -226,7 +226,7 @@ $(document).ready(function () {
           );
         } else {
           $.post(
-            "https://script.google.com/macros/s/AKfycbxbTE5pJqKQiHjRCjHsJ9ORWul7YZxuCEuixomNQ2gHBs8aUZFY49GJDKECgdTks1_-Dg/exec",
+            "https://script.google.com/macros/s/AKfycbz_wTSPLoUSI20a633IXguMQo_ueNY0-IJ1dYPcQTdNJNbO2bsnOVAnr5oVJpCuUQVYdA/exec",
             data
           )
             .done(function (data) {
