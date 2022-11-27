@@ -861,6 +861,8 @@ RSVP form
       .fa-key,
       .fa-address-book,
       .fa-bus,
+      .fa-cutlery,
+      .fa-smile-o,
       .fa-bed {
         font-size: 14px;
         position: absolute;
@@ -878,14 +880,66 @@ RSVP form
         border-radius: 6px;
         border: none;
       }
-      .chechbox-item {
+      .dropdown-item {
         display: flex;
+        transform: translateX(52px);
+        height: 100%;
+
       }
+     .dropdown-item body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+     height: 100vh;
+     background-color: #f1f1f1;
+   }
+
       .checkmark {
                 background-color: #f69d52;
 
       }
-      .test {
+    .dropdown-item select {
+    //  margin-bottom: 10px;
+    //  margin-top: 10px;
+    border: none;
+        align-items: center;
+        width: 80%;
+        text-indent: 12px;
+        // text-align: end;
+   }
+
+   select option {
+      //margin: 40px;
+      background:white;
+      color: black;
+      //text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+
+   .dropdown-item select .select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 7px;
+    }
+    /* style the items (options), including the selected item: */
+    .select-items div,.select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+    }
+
+    /* Style items (options): */
+    .select-items {
+      position: absolute;
+      background-color: DodgerBlue;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    } 
+    
+    .test {
         position: relative;
         margin-left: 70px;
         width: 70%;
