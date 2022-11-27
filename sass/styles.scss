@@ -878,36 +878,56 @@ RSVP form
         border-radius: 6px;
         border: none;
       }
-      input[type="checkbox"] {
-        /* Add if not using autoprefixer */
-        -webkit-appearance: none;
-        /* Remove most all native input styles */
-        appearance: none;
-        /* For iOS < 15 */
-        background-color: var(--form-background);
-        /* Not removed via appearance */
-        margin: 0;
+      .chechbox-item {
+        display: flex;
+      }
+      .checkmark {
+                background-color: #f69d52;
 
-        font: inherit;
-        color: currentColor;
-        // transform: translateY(-0.075em);
-        display: grid;
-        place-content: center;
       }
-      input[type="checkbox"]:focus {
-        outline: max(2px, 0.15px) solid currentColor;
-        outline-offset: max(2px, 0.15px);
+      .test {
+        position: relative;
+        margin-left: 70px;
+        width: 70%;
+        height: 70%;
+        z-index: 100;
       }
+      .test span {
+        margin-left: 40px;
+      }
+      .test input:checked ~ .checkmark {
+        background-color: #f69d52;
+      }
+      // input[type="checkbox"] {
+      //   /* Add if not using autoprefixer */
+      //   -webkit-appearance: none;
+      //   /* Remove most all native input styles */
+      //   appearance: none;
+      //   /* For iOS < 15 */
+      //   background-color: var(--form-background);
+      //   /* Not removed via appearance */
+      //   margin: 0;
 
-      input[type="checkbox"]::before {
-        content: "";
-        width: 0.65em;
-        height: 0.65em;
-        transform: scale(0);
-        box-sizing: border-box;
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--form-control-color);
-      }
+      //   font: inherit;
+      //   color: currentColor;
+      //   // transform: translateY(-0.075em);
+      //   display: grid;
+      //   place-content: center;
+      // }
+      // input[type="checkbox"]:focus {
+      //   outline: max(2px, 0.15px) solid currentColor;
+      //   outline-offset: max(2px, 0.15px);
+      // }
+      
+      // input[type="checkbox"]::before {
+      //   content: "";
+      //   width: 0.65em;
+      //   height: 0.65em;
+      //   transform: scale(0);
+      //   box-sizing: border-box;
+      //   transition: 120ms transform ease-in-out;
+      //   box-shadow: inset 1em 1em var(--form-control-color);
+      // }
 
       input::-webkit-input-placeholder {
         color: $form-placeholder;
