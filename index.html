@@ -363,16 +363,57 @@
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-input-group">
                                         <i class="fa fa-bed"></i>
-                                        <input name="housing" class="" placeholder="Logement ? (oui/non)" required>
+                                        <div class="dropdown-item">
+                                            <select name="Bed">
+                                                <option selected disabled value="default">Besoin d'une chambre ?</option>
+                                                <option value="oui">Oui</option>
+                                                <option value="non">Non</option>
+                                            </select>
+                                        </div>
+                                        <!-- <input name="housing" class="" placeholder="Logement ? (oui/non)" required> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-input-group">
-                                        <i class="fa fa-bus"></i><input name="transportation" class=""
-                                         placeholder="Navette Paris ? (oui/non)" required>
+                                        <i class="fa fa-bus"></i><div class="dropdown-item">
+                                            <select name="Navette">
+                                                <option selected disabled value="default" >Navette Paris ?</option>
+                                                <option value="oui">Oui</option>
+                                                <option value="non">Non</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-cutlery"></i>
+                                        <div class="dropdown-item">
+                                            <select name="regime">
+                                                <option selected disabled value="default" >Regime Alimentaire</option>
+                                                <option value="oui">Vegetarien</option>
+                                                <option value="non">Vegan</option>
+                                                <option value="non">Carnivore (Halal)</option>
+                                            </select>
+                                        </div>
+                                        <!-- <input name="housing" class="" placeholder="Logement ? (oui/non)" required> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-smile-o"></i>
+                                        <div class="dropdown-item">
+                                            <select name="Navette">
+                                                <option selected disabled value="default" >C'est qui le plus beau ?</option>
+                                                <option value="oui">Laura</option>
+                                                <option value="non">Majdi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-input-group">
